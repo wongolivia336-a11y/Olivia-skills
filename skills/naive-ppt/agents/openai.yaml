@@ -1,0 +1,4 @@
+interface:
+  display_name: "稚拙风 PPT"
+  short_description: "白底留白、橘红色鼠标涂鸦与清晰克制的文案，制作连续 HTML 演示"
+  default_prompt: "使用 $naive-ppt，把我的内容做成白底、橘红色稚拙插画的连续 HTML 演示。"
