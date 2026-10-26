@@ -25,3 +25,12 @@ Olivia 的可复用创作规范，按独立 Skill 存档。
 ## 关于公开仓库
 
 此仓库为 public。这里只归档可复用的抽象设计系统、工作流和通用示例；不上传第三方小红书营销提案原文件、客户内部案例库、未授权品牌素材、隐私或真实受访记录。尊重第三方材料版权与项目保密要求。
+
+
+## 2026-10-26 · editorial-data-ppt v1.1
+
+本轮从多次研究型PPT与Figma协作中，把“简洁留白+高信息密度”与**数据可信、比例正确、最小变更、截图走查**合并为统一Skill。保持原有稚拙风 Skill 不动。
+
+补充阅读：[数据统计契约](skills/editorial-data-ppt/references/data-contract.md) / [五种经典版式](skills/editorial-data-ppt/references/pattern-library.md) / [成功与反面复盘](skills/editorial-data-ppt/references/retrospective.md)。同步扩展了主Skill、视觉系统、图表选择、反面案例、Figma QA和Agent执行提示。
+
+**公开仓库仅保存方法论和匿名化经验；不包含原始内部案例、受访信息、营销提案原件或客户品牌素材。**
