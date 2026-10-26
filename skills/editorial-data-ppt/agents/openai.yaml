@@ -1,0 +1,4 @@
+interface:
+  display_name: "Editorial Data PPT"
+  short_description: "极简编辑排版 × 高信息量研究信息图"
+  default_prompt: "使用 $editorial-data-ppt，将研究报告和案例库整理成可编辑的Figma正式汇报；先核对统计口径和多选标签，复用既定蓝白视觉和母版，增量制作并逐页走查。"
