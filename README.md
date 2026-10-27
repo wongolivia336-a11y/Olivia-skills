@@ -18,6 +18,29 @@ Olivia 的可复用创作规范，按独立 Skill 存档。
 
 > 使用 $editorial-data-ppt，把给定研究报告、案例库和原 PPT 变成可编辑 Figma 研究汇报。先核对去重口径和多选标签，优先复用原有风格。保留旧页，新增独立章节。
 
+### 3. 文史思辨·缓慢推进 · **literary-inquiry-essay**
+[主 Skill](skills/literary-inquiry-essay/SKILL.md) ｜ [叙事结构](skills/literary-inquiry-essay/references/narrative-architecture.md) ｜ [反 AI slop](skills/literary-inquiry-essay/references/voice-and-anti-slop.md) ｜ [引用规范](skills/literary-inquiry-essay/references/fact-and-theory.md) ｜ [成功/失败复盘](skills/literary-inquiry-essay/references/field-notes.md) ｜ [公众号排版](skills/literary-inquiry-essay/references/wechat-editorial.md)
+
+以可信场景引出一条思想主线，理论为问题服务，认真处理反例，最后用意象回环；正文用连贯复合句承载论证，不制造口播式短句与空泛“哲学金句”。适用设计史、艺术、科技、人文经验等不同题材。调用：**$literary-inquiry-essay**。
+
+### 4. 鼠标稚拙·文学封面 · **naive-editorial-cover**
+[主 Skill](skills/naive-editorial-cover/SKILL.md) ｜ [视觉系统](skills/naive-editorial-cover/references/visual-system.md) ｜ [英文生成 Prompt](skills/naive-editorial-cover/references/prompt-recipes.md) ｜ [反面案例与QA](skills/naive-editorial-cover/references/anti-patterns-and-qa.md)
+
+MS Paint 鼠标笨拙线稿：黑色抖线、克制蓝紫、白底、大留白和一个清晰的日常隐喻。默认微信横封1080×460 PNG，可换平台与配色。**与 $naive-ppt 的纯白橘红风严格区分**。调用：**$naive-editorial-cover**。
+
+## 风格选择（不要混成一个默认风格）
+
+| 目标 | 调用 | 视觉/语言边界 |
+| --- | --- | --- |
+| 文学思想随笔/人文评论 | $literary-inquiry-essay | 规定写法与核查，不强制使用旧文章题材或封面 |
+| 公众号鼠标手绘封面 | $naive-editorial-cover | 白底黑线蓝紫；不等于 PPT 橘红 |
+| 稚拙风演示/PPT | $naive-ppt | PPT 纯白、橘红 #E6532F、16:9 |
+| 研究信息图与策略PPT | $editorial-data-ppt | 数据逻辑/母版优先，避免装饰性卡片 |
+
+组合示例：**“用 $literary-inquiry-essay 写一篇关于临摹与创新的文章，再用 $naive-editorial-cover 画微信横封；图中的物件必须来自本次文章。”**
+
+可选编辑辅助：**python skills/literary-inquiry-essay/scripts/lint_essay.py draft.md**（只报警，不自动改写）。
+
 ## 使用
 
 把 `skills/<name>/` 整个目录安装到所用 Agent 支持的 skills 位置。上传 GitHub **不等于已在 ChatGPT、Codex 或其他工具自动安装**。
@@ -34,3 +57,9 @@ Olivia 的可复用创作规范，按独立 Skill 存档。
 补充阅读：[数据统计契约](skills/editorial-data-ppt/references/data-contract.md) / [五种经典版式](skills/editorial-data-ppt/references/pattern-library.md) / [成功与反面复盘](skills/editorial-data-ppt/references/retrospective.md)。同步扩展了主Skill、视觉系统、图表选择、反面案例、Figma QA和Agent执行提示。
 
 **公开仓库仅保存方法论和匿名化经验；不包含原始内部案例、受访信息、营销提案原件或客户品牌素材。**
+
+## 2026-10-27 · Literary Essay & Naive Cover v1.0
+
+从《十月之水》与《当智力成为水电煤》的多轮合作中，分离 **文风（论证、引用、句法与叙事）** 和 **封面（绘画技法、色系、构图与隐喻）**。新规范记录成功做法及被指出的失败：连续追问导致失焦、过密反转句、短句口播、哲学装饰、错误的免费=公平推论，以及封面AI光泽与图标堆积。
+
+此仓库只保留方法与匿名化示例，不转载整篇第三方文章，也不把用户个别项目的内容设为永恒模板。
